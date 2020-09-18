@@ -21,10 +21,10 @@ const Header = () => {
         onClick={() => history.push('/')}
       />
 
-      <div className='header__search'>
+      <form onClick={() => history.push('/search')} className='header__search'>
         <input type='text' placeholder='Search...' />
         <SearchIcon />
-      </div>
+      </form>
 
       <div className='header__menu'>
         <p>Become a host</p>

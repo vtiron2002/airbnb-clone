@@ -46,3 +46,18 @@
     }
   }
 }
+
+@media (max-width: 650px) {
+  .header {
+    flex-direction: column;
+
+    &__icon {
+      margin-bottom: 1em;
+    }
+
+    &__search {
+      margin: 0;
+      margin-bottom: 1em;
+    }
+  }
+}

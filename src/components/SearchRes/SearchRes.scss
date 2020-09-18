@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: minmax(350px, 25%) auto;
   padding: 1em;
-  font-size: .9rem;
+  font-size: 0.9rem;
 
   img {
     border-radius: 8px;
@@ -17,20 +17,27 @@
     flex-direction: column;
     padding: 0 1em;
 
-
     h5 {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
-      opacity: .5;
+      opacity: 0.5;
       font-weight: 400;
       margin-bottom: 1em;
+
+      svg {
+        cursor: pointer;
+      }
+
+      .liked {
+        fill: $mainColor;
+      }
     }
 
     h3 {
       font-weight: 400;
       padding-bottom: 1.5em;
-      margin-bottom: .5em;
+      margin-bottom: 0.5em;
       position: relative;
 
       &::after {
@@ -45,7 +52,7 @@
     }
 
     p {
-      opacity: .5;
+      opacity: 0.5;
       margin-bottom: 1.5em;
     }
 
@@ -67,5 +74,12 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 730px) {
+  .searchRes {
+    grid-template-columns: 1fr;
+    gap: 1em;
   }
 }

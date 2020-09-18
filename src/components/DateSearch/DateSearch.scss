@@ -20,7 +20,6 @@
       align-items: center;
       justify-content: space-between;
       background: white;
-      margin: 0;
       flex: 1;
       padding: 1em;
       border-top: 1px solid #ccc;
@@ -39,6 +38,22 @@
       color: white;
       text-transform: inherit;
       border-radius: 0;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .rdrDefinedRangesWrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner {
+    &__info {
+      background: linear-gradient(rgba(0, 0, 0, 0.867), rgba(0, 0, 0, 0.167));
+      height: 46vh;
+      min-width: 100vw;
     }
   }
 }

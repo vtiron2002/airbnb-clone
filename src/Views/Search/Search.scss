@@ -1,0 +1,22 @@
+.searchPage {
+  &__info {
+    padding: 1em;
+    font-size: 1rem;
+    margin-bottom: 1em;
+
+    p {
+      margin: 1em 0;
+    }
+    
+    h1 {
+      margin: 0;
+      margin-bottom: .8em;
+    }
+
+    button {
+      border-radius: 500px;
+      margin: 5px;
+      font-size: .8rem;
+    }
+  }
+}

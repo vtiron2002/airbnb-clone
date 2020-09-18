@@ -1,0 +1,51 @@
+@import '../../variables/vars.scss';
+
+.banner {
+  background: url('https://media.cntraveler.com/photos/5ea354e75e5dc70008d054b9/16:9/w_2560%2Cc_limit/24912891-australia-3.jpg');
+  background-size: 100%;
+  background-position: 0 50%;
+  height: 50vh;
+  position: relative;
+
+  &__search {
+    display: flex;
+    flex-direction: column;
+
+    > button {
+      background: white !important;
+      font-weight: 900 !important;
+      text-transform: inherit !important;
+      color: $mainColor !important;
+    }
+  }
+
+  &__info {
+    background: rgb(26, 26, 26);
+    color: white;
+    min-width: 400px;
+    max-width: 40%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0 2em;
+    padding-bottom: 2em;
+
+    h1, h5 {
+      margin-bottom: 1em;
+    }
+
+    > button {
+      background: $mainColor;
+      color: white;
+      text-transform: inherit;
+      font-weight: 600;
+
+      &:hover {
+        color: $mainColor;
+        background: white;
+      }
+    }
+  }
+}

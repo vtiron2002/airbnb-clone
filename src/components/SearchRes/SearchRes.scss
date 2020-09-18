@@ -1,0 +1,71 @@
+@import '../../variables/vars.scss';
+
+.searchRes {
+  display: grid;
+  grid-template-columns: minmax(350px, 25%) auto;
+  padding: 1em;
+  font-size: .9rem;
+
+  img {
+    border-radius: 8px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+
+
+    h5 {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      opacity: .5;
+      font-weight: 400;
+      margin-bottom: 1em;
+    }
+
+    h3 {
+      font-weight: 400;
+      padding-bottom: 1.5em;
+      margin-bottom: .5em;
+      position: relative;
+
+      &::after {
+        content: '';
+        height: 2px;
+        width: 30px;
+        background: #ccc;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    p {
+      opacity: .5;
+      margin-bottom: 1.5em;
+    }
+
+    h1 {
+      text-align: right;
+    }
+
+    h2 {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1rem;
+
+      span {
+        display: flex;
+        align-items: center;
+
+        .star {
+          fill: $mainColor;
+        }
+      }
+    }
+  }
+}

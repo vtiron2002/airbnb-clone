@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 100;
+  padding: 1em;
+
+  &__icon {
+    object-fit: contain;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 1em;
+
+    border: 1px solid #333;
+    padding: 0.5em 1em;
+    border-radius: 5000px;
+
+    input {
+      font-size: 1rem;
+      border: none;
+      outline: none;
+    }
+
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & > * {
+      margin: 0 0.2em;
+      cursor: pointer;
+    }
+  }
+}

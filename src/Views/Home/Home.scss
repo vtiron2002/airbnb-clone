@@ -1,0 +1,10 @@
+.home {
+  overflow: hidden;
+
+  &__section {
+    padding: 4em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 3em;
+  }
+}

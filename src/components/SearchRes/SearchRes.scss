@@ -5,6 +5,8 @@
   grid-template-columns: minmax(350px, 25%) auto;
   padding: 1em;
   font-size: 0.9rem;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
 
   img {
     border-radius: 8px;
